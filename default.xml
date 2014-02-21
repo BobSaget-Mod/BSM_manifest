@@ -10,13 +10,15 @@
            fetch="https://github.com/SaberMod/" />
   <remote  name="SourceForge"
            fetch="git://git.code.sf.net/p/" />
+  <remote  name="sr"
+           fetch="https://github.com/SlimRoms/" />
 
   <project path="build" name="platform/build" groups="pdk" >
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
   <project path="manifest" name="SM_manifest" remote="sm" revision="sm-kk-mr1" />
   <project path="abi/cpp" name="platform/abi/cpp" groups="pdk" />
-  <project path="art" name="platform/art" />
+  <project path="art" name="android_art" remote="sr" revision="kk4.4" />
   <project path="bionic" name="platform/bionic" groups="pdk" />
   <project path="bootable/bootloader/legacy" name="platform/bootable/bootloader/legacy" />
   <project path="bootable/diskinstaller" name="platform/bootable/diskinstaller" />
